@@ -1,60 +1,3 @@
-// import React, { useState, useEffect, useRef } from 'react';
-// import { AppBar, Toolbar, IconButton, Button } from '@mui/material';
-// import MenuIcon from '@mui/icons-material/Menu';
-// import FacebookIcon from '@mui/icons-material/Facebook';
-// import icono from '../Components/Images/logo2.png'
-// import InstagramIcon from '@mui/icons-material/Instagram';
-// import CloseIcon from '@mui/icons-material/Close';
-// function Navbar({ onMenuClick, windowWidth }) {
-//   const [menuOpen, setMenuOpen] = useState(false);
-
-//   const toggleMenu = () => {
-//     setMenuOpen(!menuOpen);
-//     onMenuClick(!menuOpen); // Pasa el estado del menú a la función del padre
-//   };
-//   return (
-//     <AppBar className='bg_navbar' position="fixed" elevation={0} style={{ zIndex: 1000, background: '#b8bedd' }}>
-//       <Toolbar className="justify-between ">
-//         {windowWidth &&
-//           <IconButton edge="start" color="black" aria-label="menu" onClick={toggleMenu}>
-//             {menuOpen ? <CloseIcon /> : <MenuIcon />}
-//           </IconButton>}
-
-//         <div style={{ display: 'flex', alignItems: 'center' }}>
-//           <img src={icono} alt="Icono" style={{ width: '25px', height: '25px', marginRight: "6px" }} />
-//           <h1 className="text-black" style={{ fontSize: '1rem', marginRight: '8px' }}>MEπA</h1>
-//         </div>
-//         <div>
-//           <IconButton
-//             edge="start"
-//             color="black"
-//             aria-label="facebook"
-//             component="a"
-//             href="https://www.facebook.com/profile.php?id=61558164045743"
-//             target="_blank"
-//           >
-//             <FacebookIcon style={{ fontSize: 25 }} />
-//           </IconButton>
-//           <IconButton
-//             edge="start"
-//             color="black"
-//             aria-label="instagram"
-//             component="a"
-//             href="https://www.instagram.com/academia_de_arte_educativo/"
-//             target="_blank"
-//           >
-//             <InstagramIcon style={{ fontSize: 25 }} />
-//           </IconButton>
-//         </div>
-//       </Toolbar>
-//     </AppBar>
-//   );
-// }
-
-// export default Navbar;
-
-// components/Navbar.jsx
-// Mejorado: Navbar responsivo con íconos de redes y sidebar ocultable
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import icono from "../Components/Images/logo2.png";
@@ -76,13 +19,13 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md z-50 fixed w-full">
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-        <div className="flex items-center space-x-2">
+        <Link to="/" onClick={handleLinkClick} className="flex items-center space-x-2">
           <img src={icono} alt="Logo" className="w-8 h-8" />
           <h1 className="text-xl font-semibold text-gray-800">Academia Meπa</h1>
-        </div>
+        </Link>
 
         <div className="hidden md:flex space-x-6 items-center">
-          <Link to="/"  onClick={handleLinkClick} className="hover:text-red-500 text-sm">Inicio</Link>
+          <Link to="/" onClick={handleLinkClick} className="hover:text-red-500 text-sm">Inicio</Link>
 
           <div className="relative">
             <button

@@ -6,7 +6,7 @@ import { Carousel } from 'react-responsive-carousel';
 // Imágenes promocionales
 import cosmetologiaImg from '../../Components/Images/carrusel/cosmetodologia.jpg';
 import enfermeriaImg from '../../Components/Images/carrusel/enfermera.jpg';
-import barberiaImg from '../../Components/Images/carrusel/barbershop.jpeg';
+import barberiaImg from '../../Components/Images/carrusel/barbershop.jpg';
 import miradaImg from '../../Components/Images/carrusel/miradaperfecta.jpg';
 
 const promociones = [
@@ -52,7 +52,11 @@ const Carrusel = () => {
     >
       {promociones.map((promo, index) => (
         <div key={index} className="relative">
-          <img src={promo.imagen} alt={promo.titulo} className="object-cover w-full h-[500px]" />
+          <img
+            src={promo.imagen}
+            alt={promo.titulo}
+            className="object-cover object-[center_30%] w-full h-[500px]"
+          />
           <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-start">
             <div className="ml-[10%] max-w-xl text-white">
               <h2 className="text-4xl font-bold">{promo.titulo}</h2>
