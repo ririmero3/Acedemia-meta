@@ -11,6 +11,7 @@ import VisaIcon from '../Components/Images/pago/visa.png';
 import MasterCardIcon from '../Components/Images/pago/mastercard.png';
 import BitcoinIcon from '../Components/Images/pago/acpbtc.jpeg';
 import PayPalIcon from '../Components/Images/pago/paypal.png';
+import { SiTiktok } from 'react-icons/si';
 
 const Footer = () => {
   return (
@@ -52,6 +53,9 @@ const Footer = () => {
               </IconButton>
               <IconButton color="inherit" href="https://www.instagram.com/academia_de_arte_educativo/" target="_blank">
                 <InstagramIcon />
+              </IconButton>
+               <IconButton color="inherit" href="https://www.tiktok.com/@academia_metta?_t=ZM-8y8TPU1Rmje&_r=1" target="_blank">
+                <SiTiktok />
               </IconButton>
               <IconButton color="inherit" href="mailto:mettaacademia77@gmail.com">
                 <EmailIcon />

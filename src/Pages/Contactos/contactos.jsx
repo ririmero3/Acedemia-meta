@@ -5,6 +5,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import logo from '../../Components/Images/logo2.png';
+import { SiTiktok } from 'react-icons/si';
 
 const Contactos = () => {
 
@@ -64,6 +65,15 @@ const Contactos = () => {
             target="_blank"
           >
             <InstagramIcon />
+          </IconButton>
+          <IconButton
+            color="black"
+            aria-label="Tiktok"
+            component="a"
+            href="https://www.tiktok.com/@academia_metta?_t=ZM-8y8TPU1Rmje&_r=1"
+            target="_blank"
+          >
+            <SiTiktok />
           </IconButton>
           <IconButton
             color="error"

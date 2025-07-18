@@ -32,7 +32,7 @@ const CursoDetalle = () => {
             <p className="text-gray-700">{curso.duracion}</p>
 
             <h3 className="text-xl font-semibold text-red-500 mt-4">Horario</h3>
-            <p className="text-gray-700">{curso.horario}</p>
+            <p className="text-gray-700">{curso.horarios}</p>
 
             <h3 className="text-xl font-semibold text-red-500 mt-4">Matrícula</h3>
             <p className="text-gray-700">{curso.matricula}</p>

@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import icono from "../Components/Images/logo2.png";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import { SiTiktok } from "react-icons/si";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(null);
@@ -38,7 +40,7 @@ const Navbar = () => {
               <div className="absolute bg-white shadow-lg rounded-md mt-2 w-48">
                 <Link to="/misionyvision" onClick={handleLinkClick} className="block px-4 py-2 text-sm hover:bg-gray-100">Misión y Visión</Link>
                 <Link to="/infraestructura" onClick={handleLinkClick} className="block px-4 py-2 text-sm hover:bg-gray-100">Nuestras Instalaciones</Link>
-                <Link to="/profesores" onClick={handleLinkClick} className="block px-4 py-2 text-sm hover:bg-gray-100">Instructores de Carrera</Link>
+                {/* <Link to="/profesores" onClick={handleLinkClick} className="block px-4 py-2 text-sm hover:bg-gray-100">Instructores de Carrera</Link> */}
               </div>
             )}
 
@@ -48,16 +50,55 @@ const Navbar = () => {
           <Link to="/contactos" onClick={handleLinkClick}>
             <button className="bg-yellow-400 hover:bg-yellow-300 text-sm px-4 py-2 rounded-md">Contacto</button>
           </Link>
-          <div className="flex space-x-2 text-xl">
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=61558164045743" className="hover:text-blue-600"><FacebookIcon /></a>
-            <a target="_blank" href="https://www.instagram.com/academia_de_arte_educativo/" className="hover:text-pink-500"><InstagramIcon /></a>
+
+          <div className="flex items-center space-x-4 text-xl">
+            <a
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=61558164045743"
+              className="hover:text-blue-600"
+            >
+              <FaFacebook size={24} />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/academia_de_arte_educativo/"
+              className="hover:text-pink-500"
+            >
+              <FaInstagram size={24} />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.tiktok.com/@academia_metta?_t=ZM-8y8TPU1Rmje&_r=1"
+              className="hover:text-pink-500"
+            >
+              <SiTiktok size={24} />
+            </a>
           </div>
         </div>
 
         {/* Botón Mobile */}
         <div className="md:hidden flex items-center space-x-4">
-          <a href="#" className="text-xl hover:text-blue-600"><FacebookIcon /></a>
-          <a href="#" className="text-xl hover:text-pink-500"><InstagramIcon /></a>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=61558164045743"
+            className="hover:text-blue-600"
+          >
+            <FaFacebook size={20} />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/academia_de_arte_educativo/"
+            className="hover:text-pink-500"
+          >
+            <FaInstagram size={20} />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.tiktok.com/@academia_metta?_t=ZM-8y8TPU1Rmje&_r=1"
+            className="hover:text-pink-500"
+          >
+            <SiTiktok size={20} />
+          </a>
           <button onClick={() => setMenuOpen(!menuOpen)}>
             <svg className="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {menuOpen ? (
@@ -84,7 +125,7 @@ const Navbar = () => {
             <div className="pl-4">
               <Link to="/misionyvision" onClick={handleLinkClick} className="block px-4 py-2 text-sm hover:bg-gray-100">Misión y Visión</Link>
               <Link to="/infraestructura" onClick={handleLinkClick} className="block px-4 py-2 text-sm hover:bg-gray-100">Nuestras Instalaciones</Link>
-              <Link to="/profesores" onClick={handleLinkClick} className="block px-4 py-2 text-sm hover:bg-gray-100">Instructores</Link>
+              {/* <Link to="/profesores" onClick={handleLinkClick} className="block px-4 py-2 text-sm hover:bg-gray-100">Instructores</Link> */}
             </div>
           )}
 

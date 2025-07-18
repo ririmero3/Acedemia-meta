@@ -13,7 +13,7 @@ const Inicio = () => {
             <Carrusel />
 
             {/* Sección Promocional */}
-            <div className="bg-white rounded-2xl shadow-xl p-6 md:p-10 max-w-5xl mx-auto mt-10 border border-gray-200">
+            <div className="bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 rounded-2xl shadow-xl p-6 md:p-10 max-w-5xl mx-auto mt-10 border border-gray-200">
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-4">
                     🎓 ¡Prepárate para un Futuro Profesional Exitoso!
                 </h2>
