@@ -1,5 +1,5 @@
 // src/Components/Carrusel.jsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
@@ -41,6 +41,12 @@ const promociones = [
 ];
 
 const Carrusel = () => {
+  useEffect(() => {
+    promociones.forEach(promo => {
+      const img = new Image();
+      img.src = promo.imagen;
+    });
+  }, []);
   return (
     <Carousel
       showArrows={true}

@@ -17,7 +17,7 @@ const CursoDetalle = () => {
 
   return (
     <div className="max-w-5xl mx-auto pb-4">
-      <div className="bg-pink-100 shadow-2xl rounded-2xl p-8">
+      <div className="bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 shadow-2xl rounded-2xl p-8">
         <img
           src={curso.imagen}
           alt={curso.titulo}
